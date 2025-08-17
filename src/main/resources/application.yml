@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/appdb
+    username: appuser
+    password: applocal
+  jpa:
+    hibernate:
+      ddl-auto: validate   # use 'update' temporarily if you want Hibernate to create tables
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
